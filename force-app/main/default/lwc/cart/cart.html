@@ -1,0 +1,27 @@
+<template>
+    <br>
+    <template if:true={_priceValue}>
+        <div class="container">
+            <lightning-card title="Selected products:" icon-name="custom:custom14">
+                <ol class="slds-list_ordered slds-m-around_medium">
+                    <template for:each={productsCart} for:item="product">
+                        <li key={product.fields.Id.value}>
+                            <a href="#">
+                                {product.fields.Name.value}: €{product.fields.MSRP__c.value}
+                            </a>
+                        </li>
+                    </template>
+                </ol>
+                <div class="description">Total number of item in the cart: {itemNumber}</div>
+                <div class="slds-box slds-box_small">Total: €{totalPrice}</div>
+            </lightning-card>
+        </div>
+        <lightning-button
+            label="Reset"
+            onclick={reset}>
+        </lightning-button>
+    </template>
+    <template if:false={_priceValue}>
+        <div class="slds-text-heading_medium">Empty shopping chart</div>
+    </template>
+</template>

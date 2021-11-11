@@ -1,0 +1,63 @@
+<template>
+    <lightning-card title="Conditional Rendering with Button" icon-name="utility:hierarchy">
+        <div >
+            <p>
+                <template if:true={show}>
+                    Peek-a-boo!
+                </template>
+                <template if:false={show}>
+                    I'm hiding!
+                </template>
+            </p>
+            <p>
+                <lightning-button onclick={handleClick} variant="neutral" label="Switch"></lightning-button>
+            </p>
+        </div>
+    </lightning-card>
+    <lightning-card>
+        <div>
+            <p>
+                {saluti}
+            </p>
+            <p>
+                {itemName}
+            </p>
+        </div>
+        <input type="text" value={myValue} onchange={handleChange} />
+    </lightning-card>
+    <lightning-card>
+    <div class="slds-size_3-of-4">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Carousel With disable-auto-scroll Attribute
+        <lightning-carousel disable-auto-scroll>
+            <lightning-carousel-image
+                src = "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                header = "First Card"
+                description = "Contact List"
+                alternative-text = "First card accessible description."
+                onclick={handleButtonClick}>
+            </lightning-carousel-image>
+            <lightning-carousel-image
+                src = "https://media.istockphoto.com/photos/aerial-view-of-london-and-the-tower-bridge-picture-id1265900812?b=1&k=20&m=1265900812&s=170667a&w=0&h=jOR9G-887Sh5LXygPFBIy8TIx5vCoVDm8FKISpapq-E="
+                header = "Second Card"
+                description = "Second card description."
+                alternative-text = "Second card accessible description."
+                href = "https://www.example.com">
+            </lightning-carousel-image>
+            <lightning-carousel-image
+                src = "https://st.depositphotos.com/1004061/2699/i/600/depositphotos_26992121-stock-photo-london-the-uk-red-bus.jpg"
+                header = "Third Card"
+                description = "Third card description."
+                alternative-text = "Third card accessible description."
+                href = "https://www.example.com">
+            </lightning-carousel-image>
+        </lightning-carousel>
+        </div>
+    </div>
+    </lightning-card>
+    <lightning-input
+        type="number"
+        label="Number of Employees"
+        value={numberOfEmployees}
+        onchange={handleChange}>
+    </lightning-input>
+</template>

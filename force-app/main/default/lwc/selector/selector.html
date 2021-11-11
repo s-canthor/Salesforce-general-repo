@@ -1,0 +1,16 @@
+<template>
+    <div class="wrapper">
+    <header class="header">Select a Bike available for {name}, {title}</header>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <c-list onproductselected={handleProductSelected}></c-list>
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={selectedProductId} onpriceselected={handlePriceSelected}></c-detail>
+            <c-cart price-value={addedToCartProductId}></c-cart>
+        </aside>
+        </div>
+    </section>
+    </div>
+</template>

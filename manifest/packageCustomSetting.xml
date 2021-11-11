@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>CS_GestioneScript__c.FieldApiName__c</members>
+		<members>CS_GestioneScript__c.FieldValue__c</members>
+		<members>CS_GestioneScript__c.SobjectApiName__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>CS_GestioneScript__c</members>
+		<name>CustomObject</name>
+	</types>
+	<version>51.0</version>
+</Package>
