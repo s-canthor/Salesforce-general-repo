@@ -7,6 +7,9 @@
 .localdevserver/
 .vscode
 
+# Salesforce package
+manifest/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 
