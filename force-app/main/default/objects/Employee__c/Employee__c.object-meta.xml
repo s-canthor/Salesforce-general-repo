@@ -145,29 +145,22 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
+    <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Bear</label>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Employee</label>
     <nameField>
-        <label>Bear Name</label>
-        <trackFeedHistory>true</trackFeedHistory>
+        <label>Employee Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Bears</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Age__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Sex__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Supervisor__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Age__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Sex__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Supervisor__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
+    <pluralLabel>Employees</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>

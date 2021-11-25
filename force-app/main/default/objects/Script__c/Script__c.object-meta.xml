@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Script_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -143,31 +146,24 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Test object for studying</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
+    <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Bear</label>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Script</label>
     <nameField>
-        <label>Bear Name</label>
-        <trackFeedHistory>true</trackFeedHistory>
+        <label>Script Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Bears</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Age__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Sex__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Supervisor__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Age__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Sex__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Supervisor__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
+    <pluralLabel>Scripts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

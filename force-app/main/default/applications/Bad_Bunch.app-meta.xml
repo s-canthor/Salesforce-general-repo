@@ -15,5 +15,6 @@
     <tabs>Example_2_Scroll_List</tabs>
     <tabs>Example_3_Input_Fields</tabs>
     <tabs>Example_4_Table</tabs>
+    <tabs>Employee__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
