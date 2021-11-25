@@ -1,3 +1,7 @@
+# The SF Cantoro Project
+
+Here you can find some little functionalities that could be very useful amongst different projects
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
