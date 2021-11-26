@@ -8,7 +8,6 @@ trigger BearAlertTopicAssignmentTrigger on TopicAssignment (after insert) {
 	}
     // Check if there are FeedItem 
 	if(!feedIds.isEmpty()) {
-        System.debug("Test");
         // Load FeedItem bodies
 		Map<Id,FeedItem> feedItems = new Map<Id,FeedItem>([SELECT Body FROM FeedItem WHERE Id IN: feedIds]);
         // Create messages for each FeedItem that contains the BearAlert topic
