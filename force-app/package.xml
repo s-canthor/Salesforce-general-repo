@@ -44,10 +44,6 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>AppRoccio</members>
-		<name>CustomApplication</name>
-	</types>
-	<types>
 		<members>Bear__c.Age__c</members>
 		<members>Bear__c.Birthdate__c</members>
 		<members>Bear__c.Height__c</members>
@@ -72,36 +68,7 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Account_Record_Page</members>
-		<members>Account_Record_Page1</members>
-		<members>AppRoccio_UtilityBar</members>
-		<members>Bear_Record_Page</members>
-		<members>BikeSelector</members>
-		<members>Bike_Card</members>
-		<members>Contacts_List</members>
-		<members>Dating</members>
-		<members>Event_Comms</members>
-		<members>Example_1_Loop</members>
-		<members>Example_2_Scroll_List</members>
-		<members>Example_3_Input_Fields</members>
-		<members>Example_4_Table</members>
-		<members>GetAddressUK</members>
-		<members>Home_Page_Default</members>
-		<members>LWC_Lifecycle_App</members>
-		<members>LWC_Visualforce_Devs</members>
-		<members>LightningSalesConsole_UtilityBar</members>
-		<members>LightningService_UtilityBar</members>
-		<members>MyData</members>
-		<members>New_Account_Page</members>
-		<members>New_Opportunity_Page</members>
-		<members>Sales_Home</members>
-		<members>Sales_UtilityBar</members>
 		<members>Script_Record_Page</members>
-		<members>Ursus_Park_UtilityBar</members>
-		<members>Working_with_Data</members>
-		<members>Your_Bike_Selection</members>
-		<members>smon__Streaming_Monitor</members>
-		<members>trlhdtips__Trailhead_Tips_UtilityBar</members>
 		<name>FlexiPage</name>
 	</types>
 	<version>51.0</version>
