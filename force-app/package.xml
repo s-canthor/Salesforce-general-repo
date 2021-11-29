@@ -13,7 +13,6 @@
 		<members>GetAddressIoConnectSettings</members>
 		<members>JavascriptExceptions</members>
 		<members>ListUtils</members>
-		<members>PlatformEventTest</members>
 		<members>TestOpportunityChangeTrigger</members>
 		<members>Utils</members>
 		<name>ApexClass</name>
