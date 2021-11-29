@@ -18,6 +18,7 @@
 					 retrieveTarget="${Sandbox1.retrieveTarget}" 
 					 unpackaged="${Sandbox1.unpackaged}"/>
 		<echo message="Commiting all changes with message ${gt.commitMessage}" />
+		<!--
 		<git command="add" dir="${Sandbox1.gitDirectory}">
 			<args>
 				<arg value="." />
@@ -28,8 +29,10 @@
 				<arg value="-am ${gt.commitMessage}" />
 			</args>
 		</git>
+		-->
 	</target>
 
+	<!--
 	<macrodef name="git">
 		<attribute name="command" />
 		<attribute name="dir" />
@@ -42,5 +45,5 @@
 				<args/>
 			</exec>
 		</sequential>
-	</macrodef>
+	</macrodef>-->
 </project>
