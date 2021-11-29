@@ -3,7 +3,6 @@
 	<types>
 		<members>AccountController</members>
 		<members>AccountListControllerLwc</members>
-		<members>AccountTest</members>
 		<members>BearController</members>
 		<members>ContactController</members>
 		<members>ContactControllerLWC</members>
