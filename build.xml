@@ -9,6 +9,7 @@
 				   serverurl="${sfSandbox.serverurl}" 
 				   deployRoot="${sfSandbox.retrieveTarget}" 
 				   runAllTests="true" />
+		<delete dir="${sfSandbox.retrieveTarget}"/>
 	</target>
 
 	<target name="retrieve">
