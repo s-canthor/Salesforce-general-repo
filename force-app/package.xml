@@ -3,54 +3,20 @@
 	<types>
 		<members>AccountController</members>
 		<members>AccountListControllerLwc</members>
+		<members>AccountTest</members>
 		<members>BearController</members>
-		<members>ChangePasswordController</members>
-		<members>ChangePasswordControllerTest</members>
-		<members>CommunitiesLandingController</members>
-		<members>CommunitiesLandingControllerTest</members>
-		<members>CommunitiesLoginController</members>
-		<members>CommunitiesLoginControllerTest</members>
-		<members>CommunitiesSelfRegConfirmController</members>
-		<members>CommunitiesSelfRegConfirmControllerTest</members>
-		<members>CommunitiesSelfRegController</members>
-		<members>CommunitiesSelfRegControllerTest</members>
 		<members>ContactController</members>
 		<members>ContactControllerLWC</members>
 		<members>ContactsTodayController</members>
 		<members>ContactsTodayControllerTest</members>
 		<members>EnumValueOf</members>
-		<members>ForgotPasswordController</members>
-		<members>ForgotPasswordControllerTest</members>
 		<members>GetAddressIoConnectSettings</members>
 		<members>JavascriptExceptions</members>
-		<members>LightningForgotPasswordController</members>
-		<members>LightningForgotPasswordControllerTest</members>
-		<members>LightningLoginFormController</members>
-		<members>LightningLoginFormControllerTest</members>
-		<members>LightningSelfRegisterController</members>
-		<members>LightningSelfRegisterControllerTest</members>
 		<members>ListUtils</members>
-		<members>MyProfilePageController</members>
-		<members>MyProfilePageControllerTest</members>
 		<members>PlatformEventTest</members>
-		<members>SObjectStringFieldComparator</members>
-		<members>SiteLoginController</members>
-		<members>SiteLoginControllerTest</members>
-		<members>SiteRegisterController</members>
-		<members>SiteRegisterControllerTest</members>
-		<members>SortableAccount</members>
 		<members>TestOpportunityChangeTrigger</members>
 		<members>Utils</members>
 		<name>ApexClass</name>
-	</types>
-	<types>
-		<members>ForgotPasswordConfirm</members> 
-		<members>CommunitiesLanding</members>
-		<members>CommunitiesLogin</members>
-		<members>CommunitiesSelfReg</members>
-		<members>CommunitiesSelfRegConfirm</members>
-		<members>CommunitiesTemplate</members>
-		<name>ApexPage</name>
 	</types>
 	<types>
 		<members>Bear__c.Age__c</members>
