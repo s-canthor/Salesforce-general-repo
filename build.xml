@@ -7,7 +7,6 @@
 		<sf:deploy username="${Sandbox2.username}" 
 				   password="${Sandbox2.password}" 
 				   serverurl="${sfSandbox.serverurl}" 
-				   deployRoot="${Sandbox2.retrieveTarget}" 
 				   runAllTests="true" />
 	</target>
 
@@ -15,7 +14,6 @@
 		<sf:retrieve username="${Sandbox1.username}" 
 					 password="${Sandbox1.password}" 
 					 serverurl="${sfSandbox.serverurl}" 
-					 retrieveTarget="${Sandbox1.retrieveTarget}" 
 					 unpackaged="${Sandbox1.unpackaged}"/>
 		<echo message="Commiting all changes with message ${gt.commitMessage}" />
 		<!--
