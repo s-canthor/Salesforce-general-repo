@@ -1,17 +1,47 @@
-<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Code Backup Without Folders" default="retrieve" basedir="." xmlns:sf="antlib:com.salesforce">
 
-    <property file="build.properties"/>
-    <property environment="env"/>
+	<property file="build.properties"/>
+	<property environment="env"/>
 
-    <!-- Setting default value for username, password and session id properties to empty string 
-         so unset values are treated as empty. Without this, ant expressions such as ${sf.username}
-         will be treated literally.
-    -->
-    <condition property="sf.username" value=""> <not> <isset property="sf.username"/> </not> </condition>
-    <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
+	<target name="Deploy">
+		<sf:deploy username="${Sandbox2.username}" 
+				   password="${Sandbox2.password}" 
+				   serverurl="${sfSandbox.serverurl}" 
+				   deployRoot="${Sandbox2.retrieveTarget}" 
+				   runAllTests="true" />
+	</target>
 
-    <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
-    <target name="deployUnpackaged">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
-    </target>
+	<target name="retrieve">
+		<sf:retrieve username="${Sandbox1.username}" 
+					 password="${Sandbox1.password}" 
+					 serverurl="${sfSandbox.serverurl}" 
+					 retrieveTarget="${Sandbox1.retrieveTarget}" 
+					 unpackaged="${Sandbox1.unpackaged}"/>
+		<echo message="Commiting all changes with message ${gt.commitMessage}" />
+		<git command="add" dir="${Sandbox1.gitDirectory}">
+			<args>
+				<arg value="." />
+			</args>
+		</git>
+		<git command="commit" dir="${Sandbox1.gitDirectory}">
+			<args>
+				<arg value="-am ${gt.commitMessage}" />
+			</args>
+		</git>
+	</target>
+
+	<macrodef name="git">
+		<attribute name="command" />
+		<attribute name="dir" />
+		<element name="args" optional="true" />
+		<sequential>
+			<echo message="Executing Command in folder @{dir}" />
+			<echo message="git @{command}" />
+			<exec executable="git" dir="@{dir}">
+				<arg value="@{command}" />
+				<args/>
+			</exec>
+		</sequential>
+	</macrodef>
+	
 </project>
