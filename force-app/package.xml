@@ -44,6 +44,14 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
+		<members>CommunitiesLanding</members>
+		<members>CommunitiesLogin</members>
+		<members>CommunitiesSelfReg</members>
+		<members>CommunitiesSelfRegConfirm</members>
+		<members>CommunitiesTemplate</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
 		<members>Bear__c.Age__c</members>
 		<members>Bear__c.Birthdate__c</members>
 		<members>Bear__c.Height__c</members>
