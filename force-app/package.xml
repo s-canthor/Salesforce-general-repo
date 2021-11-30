@@ -5,31 +5,15 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>Bear__c.Age__c</members>
-		<members>Bear__c.Birthdate__c</members>
-		<members>Bear__c.Height__c</members>
-		<members>Bear__c.Location__c</members>
-		<members>Bear__c.Observations__c</members>
-		<members>Bear__c.Sex__c</members>
-		<members>Bear__c.Supervisor__c</members>
-		<members>Bear__c.Weight__c</members>
-		<members>Employee__c.First_Name__c</members>
-		<members>Employee__c.Last_Name__c</members>
-		<members>Employee__c.Tenure__c</members>
-		<members>Get_Address_IO__c.apiKey__c</members>
-		<members>Get_Address_IO__c.postcodeLength__c</members>
-		<members>Script__c.Script_text__c</members>
+		<members>*</members>
 		<name>CustomField</name>
 	</types>
 	<types>
-		<members>Bear__c</members>
-		<members>Employee__c</members>
-		<members>Get_Address_IO__c</members>
-		<members>Script__c</members>
+		<members>*</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Script_Record_Page</members>
+		<members>*</members>
 		<name>FlexiPage</name>
 	</types>
 	<version>51.0</version>
