@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>*</members>
+		<members>AccountController</members>
+		<members>AccountListControllerLwc</members>
+		<members>BearController</members>
+		<members>ContactController</members>
+		<members>ContactControllerLWC</members>
+		<members>ContactsTodayController</members>
+		<members>ContactsTodayControllerTest</members>
+		<members>EnumValueOf</members>
+		<members>GetAddressIoConnectSettings</members>
+		<members>JavascriptExceptions</members>
+		<members>ListUtils</members>
+		<members>TestOpportunityChangeTrigger</members>
+		<members>Utils</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Bear__c.Age__c</members>
+		<members>Bear__c.Birthdate__c</members>
+		<members>Bear__c.Height__c</members>
+		<members>Bear__c.Location__c</members>
+		<members>Bear__c.Observations__c</members>
+		<members>Bear__c.Sex__c</members>
+		<members>Bear__c.Supervisor__c</members>
+		<members>Bear__c.Weight__c</members>
+		<members>Employee__c.First_Name__c</members>
+		<members>Employee__c.Last_Name__c</members>
+		<members>Employee__c.Tenure__c</members>
+		<members>Get_Address_IO__c.apiKey__c</members>
+		<members>Get_Address_IO__c.postcodeLength__c</members>
+		<members>Script__c.Script_text__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Bear__c</members>
+		<members>Employee__c</members>
+		<members>Get_Address_IO__c</members>
+		<members>Script__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Script_Record_Page</members>
 		<name>FlexiPage</name>
 	</types>
 	<version>51.0</version>
