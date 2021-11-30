@@ -3,7 +3,7 @@ public with sharing class AccountController {
     public static List<Account> getAccounts() {
         //throw new AuraHandledException('Forced error');
         return [
-            SELECT Name, AnnualRevenue, Industry
+            SELECT Name, AnnualRevenue, Industry, AccountSource
             FROM Account
             WITH SECURITY_ENFORCED
             ORDER BY Name
