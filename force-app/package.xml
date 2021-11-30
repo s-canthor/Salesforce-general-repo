@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>AccountController</members>
-		<members>AccountListControllerLwc</members>
-		<members>BearController</members>
-		<members>ContactController</members>
-		<members>ContactControllerLWC</members>
-		<members>ContactsTodayController</members>
-		<members>ContactsTodayControllerTest</members>
-		<members>EnumValueOf</members>
-		<members>GetAddressIoConnectSettings</members>
-		<members>JavascriptExceptions</members>
-		<members>ListUtils</members>
-		<members>TestOpportunityChangeTrigger</members>
-		<members>Utils</members>
+		<members>*</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
