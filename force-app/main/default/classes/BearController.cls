@@ -25,7 +25,7 @@ public with sharing class BearController {
         if (searchTerm == '') {
             return getAllBears();
         }
-        // Prepare query paramters
+        // Prepare query paramters test
         searchTerm = '%' + searchTerm + '%';
         // Execute search query
         return [
