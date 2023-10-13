@@ -1,0 +1,20 @@
+[creating a bulk insert job]
+curl https://resilient-otter-gmb1dh-dev-ed.trailblaze.my.salesforce.com/services/data/v59.0/jobs/ingest/ -H 'Authorization: Bearer 00D06000001arzA!AQkAQBcqUPol1Zq__6_usTKGD2E7F8CnGRhDFtzsfOR_s.O85Hax1bDrZurj6G6fI3FFXP1L3vT8ugV.5Sue_dL74Tyj9DMv' -H "Content-Type: application/json" -H "Accept: application/json" -H "X-PrettyPrint:1" -d @newinsertjob.json -X POST
+
+[Upload your CSV data]
+curl https://resilient-otter-gmb1dh-dev-ed.trailblaze.my.salesforce.com/services/data/v59.0/jobs/ingest/7500600000goxDhAAI/batches/ -H 'Authorization: Bearer 00D06000001arzA!AQkAQBcqUPol1Zq__6_usTKGD2E7F8CnGRhDFtzsfOR_s.O85Hax1bDrZurj6G6fI3FFXP1L3vT8ugV.5Sue_dL74Tyj9DMv' -H "Content-Type: text/csv" -H "Accept: application/json" -H "X-PrettyPrint:1" --data-binary @bulkinsert.csv -X PUT
+
+
+[Set job state to UploadComplete]
+curl https://resilient-otter-gmb1dh-dev-ed.trailblaze.my.salesforce.com/services/data/v59.0/jobs/ingest/7500600000goxDhAAI/ -H 'Authorization: Bearer 00D06000001arzA!AQkAQBcqUPol1Zq__6_usTKGD2E7F8CnGRhDFtzsfOR_s.O85Hax1bDrZurj6G6fI3FFXP1L3vT8ugV.5Sue_dL74Tyj9DMv' -H "Content-Type: application/json; charset=UTF-8" -H "Accept: application/json" -H "X-PrettyPrint:1" --data-raw '{ "state" : "UploadComplete" }' -X PATCH
+
+[Check the job status and results]
+curl https://resilient-otter-gmb1dh-dev-ed.trailblaze.my.salesforce.com/services/data/v59.0/jobs/ingest/7500600000goxDhAAI/ -H 'Authorization: Bearer 00D06000001arzA!AQkAQBcqUPol1Zq__6_usTKGD2E7F8CnGRhDFtzsfOR_s.O85Hax1bDrZurj6G6fI3FFXP1L3vT8ugV.5Sue_dL74Tyj9DMv' -H "Accept: application/json" -H "X-PrettyPrint:1" -X GET
+
+[getting successfulresults]
+curl https://resilient-otter-gmb1dh-dev-ed.trailblaze.my.salesforce.com/services/data/v59.0/jobs/ingest/7500600000goxDhAAI/successfulResults/ -H 'Authorization: Bearer 00D06000001arzA!AQkAQBcqUPol1Zq__6_usTKGD2E7F8CnGRhDFtzsfOR_s.O85Hax1bDrZurj6G6fI3FFXP1L3vT8ugV.5Sue_dL74Tyj9DMv' -H "Content-Type: application/json" -H "Accept: text/csv" -H "X-PrettyPrint:1" -X GET
+
+[getting failedResults]
+curl https://resilient-otter-gmb1dh-dev-ed.trailblaze.my.salesforce.com/services/data/v59.0/jobs/ingest/7500600000goxDhAAI/failedResults/ -H 'Authorization: Bearer 00D06000001arzA!AQkAQBcqUPol1Zq__6_usTKGD2E7F8CnGRhDFtzsfOR_s.O85Hax1bDrZurj6G6fI3FFXP1L3vT8ugV.5Sue_dL74Tyj9DMv' -H "Content-Type: application/json" -H "Accept: text/csv" -H "X-PrettyPrint:1" -X GET
+
+ 
